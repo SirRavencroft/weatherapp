@@ -15,7 +15,7 @@ const WeatherIco = document.getElementById("WeatherIcon");
 
 const getWeatherBySearch = (city) => {
   console.log(city);
-  const URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
   fetch(URL)
     .then((res) => res.json())
     .then((res) => wetherInfo(res))
@@ -42,7 +42,7 @@ const wetherInfo = (info) => {
   Humidity.textContent = info.main.humidity + "%";
   WeatherIco.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${info.weather[0].icon}.png`
+    `https://openweathermap.org/img/wn/${info.weather[0].icon}.png`
   );
 
   errorMessage.textContent = "";
@@ -53,7 +53,7 @@ const wetherInfo = (info) => {
 //weatherInfo przekazujac do niej odpowiedzi z naszego fetch/then
 const getWeatherByLocation = (coords) => {
   console.log(coords);
-  const URL = `http://api.openweathermap.org/data/2.5/weather?lat=${coords.latitude}&lon=${coords.longitude}&appid=${API_KEY}`;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.latitude}&lon=${coords.longitude}&appid=${API_KEY}`;
   fetch(URL)
     .then((res) => res.json())
     .then((res) => wetherInfo(res))
