@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="#">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="Sentence"></h1>
+
+    <div class="wrapper">
+        <div class="City">
+            <h3> Moja lokalizacja: <span id="CityName"></span></h3>
+            <p class="Icon"> <img id="WeatherIcon"></img></p>
+        </div>
+        <div class="Country">
+            <h3>Kraj: <span id="CityCountry"></span></h3>
+        </div>
+        <div class="Temperature">
+            <h3>temperatura: <span id="CityTemp"></span></h3>
+        </div>
+        <div class="Felling">
+            <h3>Odczuwalna: <span id="CityFellsLike"></span></h3>
+        </div>
+        <div class="Windspeed">
+            <h3>Wiatr: <span id="Windspeed"></span></h3>
+        </div>
+        <div class="Clouds">
+            <h3>Zachmurzenie:<span id="Clouds"></span></h3>
+        </div>
+        <div class="Presure">
+            <h3>Ciśnienie: <span id="Pressure"></span></h3>
+        </div>
+        <div class="Humidity">
+            <h3>Wilgotność: <span id="Humid"></span></h3>
+        </div>
+        <div class="Serch">
+            <input type="text" placeholder="Search a City..." id="CitySearch">
+            <button id="SearchBtn">Pokaż wyniki</button>
+            <p style="color: red;" id="ErrorMessage"></p>
+            <button id="CurrentLoc">Aktualna lokalizacja</button>
+        </div>
+        <div class="Squere"></div>
+
+
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
